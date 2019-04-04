@@ -1,0 +1,45 @@
+<html>
+<head>
+<style>
+    table{margin-top: 50px;}
+table,tr,td{border-collapse:collapse;padding: 7px; background-color:rgb(63, 62, 62); color:white; border:1px solid black;}
+td{font-size: 25px; padding: 10px}
+input{font-size: 20px}
+body{background-repeat: no-repeat; background-size: cover}
+</style>
+</head> 
+<body style="background-image: url(bk.jpg)">
+<table BORDER="1px solid black" align="center">
+<form onsubmit="window.alert('Thank you for your feedback')" target="self">
+<caption style="color:rgb(255, 255, 255); text-shadow:2px 2px 4px black; font-size: 35px"><b>FEEDBACK</b></caption>
+<tr><td>Firstname:</td>
+<td><input type="text" name="firstname"></td></tr>
+<tr><td>Lastname:</td>
+<td><input type="text" name="lastname"></td></tr>
+<tr><td>Address:</td>
+<td><TEXTAREA ROWS="5" cols="30"></textarea></td></tr>
+<tr><td>Gender:</td>
+<td><input type="radio" name="male">MALE
+<input type="radio" name="female">FEMALE</td></tr>
+<tr><td>Your experience:</td><td><select>
+<option value="Very Good">VERY GOOD</option>
+<option value="GOOD">GOOD</option>
+<option value="BAD">BAD</option></td></tr></select>
+<tr><td>Availability of products:</td><td><select>
+    <option value="Very Good">VERY GOOD</option>
+    <option value="GOOD">GOOD</option>
+    <option value="BAD">BAD</option></td></tr></select>
+<tr><td>Look of website:</td><td><select>
+    <option value="Very Good">VERY GOOD</option>
+    <option value="GOOD">GOOD</option>
+    <option value="BAD">BAD</option></td></tr></select>
+<tr><td>Would you like to buy from us more?</td><td><select>
+    <option value="SURE">SURE</option>
+    <option value="NOPE">NOPE</option></td></tr></select>
+    
+<tr><td><button type="submit" name="submit" >SUBMIT</button></td>
+<td><button type="reset" name="reset">RESET</button></td></tr>
+</form>
+</table>
+</body>
+</html>

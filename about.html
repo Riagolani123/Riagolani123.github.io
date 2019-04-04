@@ -1,0 +1,87 @@
+<html>
+<head>
+    <style>
+        @keyframes fade {from {opacity: .4} to {opacity: 1}}
+    pre{font-size: 25px;}
+    * {box-sizing: border-box;}
+    .mySlides {display: none;}
+    img {vertical-align: middle;}
+    .slideshow{max-width: 1000px;position: relative; margin: auto; background-color: black; border:3px solid black; box-shadow:5px 7px blanchedalmond}
+    .dot {height: 15px;width: 15px;margin: 0 2px;background-color: #bbb;border-radius: 50%;display: inline-block;transition: background-color 0.6s ease;}
+    .active {background-color: #717171;}
+    .fade {animation-name: fade;animation-duration: 1.5s;}
+    
+    
+    </STYLE>
+    <body style="background-image:url(background.jpg)">
+        <div class="slideshow">
+            <div class="mySlides fade">
+            <img src="about1.jpg" style="width:1000px; height:500px"></div>
+                    
+            <div class="mySlides fade">
+            <img src="about2.jpg" style="width:1000px;height: 500px"></div>
+                          
+            <div class="mySlides fade">
+            <img src="about3.jpg" style="width:1000px;height: 500px"></div>
+           
+            <div class="mySlides fade">
+           <img src="about4.jpg" style="width:1000px;height: 500px"></div>
+    
+           <div class="mySlides fade">
+            <img src="about5.jpg" style="width:1000px;height: 500px"></div>
+                                  
+        </div>
+        
+        <br>
+                    
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        <br><br><br>
+        <marquee style="font-size:25px; background-color: crimson; color:black;" scrolldelay="0s" scrollamount="10">This is how our place looks like. Everything is fresh and hygenic, is our main concern.We conduct survey about thrice a day to check the freshness and quality of our products. </marquee>            
+        <br><br><br>
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000);
+            }
+        </script>
+                    
+    <div style="box-shadow: 5px 10px grey; border:1px solid;" background-image="bk.jpg ">
+    <pre>
+    Our business started in 1986. Intially two brothers used to run this shop. 
+    We, their children now work for the progress of this business.
+    At the beginning the business was only offline. 
+    But now with digitization, we decided to take this business in the online market too.
+    We work from monday to saturday from 9:00am to 8:00pm 
+    for offline trades. Online trades are available at any time from monday to saturday.
+    We have managers managing our offline and online trades.
+    </pre>
+    </div>
+    <p style="font-size: 30px; text-align: center; color:black; " >Do visit our place to know more about us.</p>
+    <h1 style="text-align:center">Find us at:</h1>
+    <p style="font-size: 30px; text-align: center; color:black; ">
+    98, Gidhwani Road,<br>
+    Beside Vavdi char rasta,<br>
+    Godhra-389001<br>
+    </p>
+    </body>
+</html>

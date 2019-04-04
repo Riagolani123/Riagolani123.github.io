@@ -1,0 +1,81 @@
+<html>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <style>
+       .xyz{}
+       *{box-sizing: border-box;}
+        @keyframes ex{from {color:white;text-shadow:2px 2px 2px rgb(11, 1, 44); font-size:20px} to {color:black; font-size:100px;}}
+        .nav{background-color:black; padding:15px; word-spacing:100px; position:sticky; top:0;overflow:none;}
+        .nav a{color:white; font-size:18px; display:inline-block;overflow: hidden;}
+        .nav a:hover{background-color:grey;overflow: hidden;}
+        .content{color:black; font-size:25px;}
+        .header{color:unset; text-shadow:4px 6px 7px black; font-size:100px; text-indent:bold; animation-name: ex; animation-duration: 4s }
+        .button a{color:black;background-color:beige; size: 20px;}
+        .container{position: relative;overflow: hidden;}
+        .column{float:right; background-color:unset;}
+        .dropdown {position: relative;width:50%;overflow: hidden;}
+        .dropcontent {right: 0;left: 0;height:0;overflow: hidden; position: absolute;background-color:black; width:100%;}
+        .dropdown:hover .dropcontent {height: 100%; bottom: 0;overflow: hidden;}
+        .text{ color:white;overflow: hidden;top:50%;left:50%; font-size: 20px; background-color:black; position: absolute; transform: translate(-50%,-50%);}
+    </style>               
+</head>
+<body style="background-image:url(background.jpg)">
+<div class="header"><center>WHOLESALE CORNER</center></div>
+<div class="nav">
+    <a href="logo.jpg"><img src="logo.jpg" width="60px" height="30px"></a>
+    <a href="menu.html" style="margin:0px 0px 0px 400px">HOME</a>
+    <a href="about.html">ABOUTUS</a>
+    <a href="contact.html">CONTACTUS</a>
+    <a href="form.html">FEEDBACK</a>
+</div>
+<div class="column">
+    <button type="submit" value="login" class="button"><a href="login.html">LOGIN</a></button><br>
+</div>   
+<br><br><br><br><br>
+<center>
+<div class="container">
+        <h1>Our services</h1>
+        <div class="dropdown"><img src="service.jpg" width="500px" height="300px" style="display: block; overflow: hidden;">
+        <div class="dropcontent">
+            <div class="text">
+            <p style="text-align:justify; font-family: Arial, Helvetica, sans-serif">
+            We provide service of online ordering<br> 
+            at market price.You do not have to <br>
+            worry about the delivery.Hardcopy <br>
+            and softcopy of the invoice,according <br>
+            to your requirement will be provided.<br>
+            Offline Payment is required through <br>
+            cash or cheque. <br>
+        </p></div>
+        </div>
+        </div>
+        <br><br><br><br><br>
+        <h1>Our team</h1>
+        <div class="dropdown"><img src="business.jpg" width="500px" height="300px" style="display: block; overflow: hidden;">
+        <div class="dropcontent">
+            <div class="text">
+            <p style="text-align:justify; font-family: Arial, Helvetica, sans-serif" >
+            We have managers managing the website.
+            There are people for offline management too.
+            If you are not comfortable ordering online,
+            you can certainly go for our offline service.
+            </p></div>
+        </div>
+        </div>
+        <br><br><br><br>
+        <h1>Find us at:</h1>
+        <p class="content">
+        98, Gidhwani Road,<br>
+        Beside Vavdi char rasta,<br>
+        Godhra-389001<br>
+        </p>
+        <h1>Contact us at:</h1>
+        <p class="content">
+        infobusiness@gmail.com<br>
+        or <br>
+        Mahesh Singh: 9988776421<br> 
+        Dipesh Rajai: 9988776523<br>
+        </p>
+</center>
+</body>
+</html>
